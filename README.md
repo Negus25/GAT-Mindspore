@@ -14,7 +14,7 @@ url={https://openreview.net/forum?id=rJXMpikCZ},
 note={accepted as poster},  
 }
 
-## Regarding the Cora dataset:
+## About the Cora dataset:
 
 Cora is a dataset containing 2708 scientific papers, grouped into seven distinct categories. The citation network comprises 10556 connections. Each paper is represented by a binary word vector, which indicates whether a particular word from the 1433-word dictionary is present or absent.
 
