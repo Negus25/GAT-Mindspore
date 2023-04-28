@@ -65,13 +65,8 @@ def forward_fn(features, adj, labels):
     
     return loss, logits
 
-#loss_train = F.nll_loss(output[idx_train], labels[idx_train])
-#acc_train = accuracy(output[idx_train], labels[idx_train])
-
 # Get gradient function
 grad_fn = mindspore.value_and_grad(forward_fn, None, optimizer.parameters, has_aux=True)
-
-
 
 # Define function of one-step training
 def train_step(features, adj, labels):
@@ -90,11 +85,7 @@ def train_loop(model, features, adj, labels):
         output = model(features,adj)
     loss_val = loss_fn(output[idx_val], labels[idx_val])
     acc_val = accuracy(output[idx_val], labels[idx_val])
-
-       
-    #loss_train= loss_train.asnumpy()
-    #loss_val= loss_val.asnumpy()
-
+   
     print('Epoch: {:d}'.format(epoch+1),
           'loss_train: {:.4f}'.format(loss_train.asnumpy()),
           'acc_train: {:.4f}%'.format(100*acc_train.asnumpy()),
@@ -108,17 +99,11 @@ def train_loop(model, features, adj, labels):
 
 
 def test_loop(model, features, adj, labels, loss_fn):
-    #num_batches = dataset.get_dataset_size()
     model.set_train(False)
-    #total, test_loss, correct = 0, 0, 0
-    #for data, label in dataset.create_tuple_iterator():
     pred = model(features, adj)
-    #loss_test = loss_fn(output[idx_test], labels[idx_test])
-    #total += len(features)
     loss_test = loss_fn(pred[idx_test], labels[idx_test])
     acc_test = accuracy(pred[idx_test], labels[idx_test])
-  
-
+ 
     print('Testing Results\n',
           'loss_test: {:.4f}'.format(loss_test.asnumpy()),
           'acc_test: {:.4f}%'.format(100*acc_test.asnumpy()))
