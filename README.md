@@ -9,8 +9,10 @@ Cora is a dataset containing 2708 scientific papers, grouped into seven distinct
 
 ## Cora_v2 Data:
 
-  Total Nodes: 2708\n
-  Total Edges: 10556\n
+  Total Nodes: 2708
+  
+  Total Edges: 10556
+  
   Number of Class: 7
 
 ## Label split:
