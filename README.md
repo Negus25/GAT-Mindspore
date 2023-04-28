@@ -3,14 +3,15 @@
 This is a MindSpore implementation of the Graph Attention Network (GAT) model, originally proposed by Veličković and colleagues in 2017 (https://arxiv.org/abs/1710.10903).
 ## Citation
 
-If you use this implementation in your research, please cite the original paper:
-@article{velickovic2018graph,
-title="{Graph Attention Networks}",
-author={Veli{\v{c}}kovi{'{c}}, Petar and Cucurull, Guillem and Casanova, Arantxa and Romero, Adriana and Li{'{o}}, Pietro and Bengio, Yoshua},
-journal={International Conference on Learning Representations},
-year={2018},
-url={https://openreview.net/forum?id=rJXMpikCZ},
-note={accepted as poster},
+If you use this implementation in your research, please cite the original paper:  
+
+@article{velickovic2018graph,  
+title="{Graph Attention Networks}",  
+author={Veli{\v{c}}kovi{'{c}}, Petar and Cucurull, Guillem and Casanova, Arantxa and Romero, Adriana and Li{'{o}}, Pietro and Bengio, Yoshua},  
+journal={International Conference on Learning Representations},  
+year={2018},  
+url={https://openreview.net/forum?id=rJXMpikCZ},  
+note={accepted as poster},  
 }
 
 ## Regarding the Cora dataset:
@@ -29,7 +30,7 @@ Cora is a dataset containing 2708 scientific papers, grouped into seven distinct
   - Validation: 500
   - Testing: 1000
 # Performances
-Transductive Learning: The final accuracy is between 84% and 85%
+Transductive Learning: The final accuracy is between 84 % and 85 % for epochs = 1000.
 # Environment
 - GPU
 - MindSpore version:  2.0.0rc1.dev20230416
