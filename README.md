@@ -30,7 +30,7 @@ Cora is a dataset containing 2708 scientific papers, grouped into seven distinct
   - Validation: 500
   - Testing: 1000
 # Performances
-Transductive Learning
+Transductive Learning  
 The final accuracy is between 84 % and 85 % for epochs = 1000.
 
 # Environment
