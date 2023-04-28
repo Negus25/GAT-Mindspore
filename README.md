@@ -18,7 +18,7 @@ note={accepted as poster},
 
 Cora is a dataset containing 2708 scientific papers, grouped into seven distinct categories. The citation network comprises 10556 connections. Each paper is represented by a binary word vector, which indicates whether a particular word from the 1433-word dictionary is present or absent.
 
-## Cora_v2 Data:
+## Cora Dataset:
 
   - Total Nodes: 2708
   - Total Edges: 10556
